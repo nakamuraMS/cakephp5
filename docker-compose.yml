@@ -1,4 +1,4 @@
-version: "3"
+version: "3.2"
 
 services:
   myproject-web:
@@ -22,7 +22,8 @@ services:
       MYSQL_DATABASE: myproject
       MYSQL_USER: myproject-user
       MYSQL_PASSWORD: i3b26syt
-      MYSQL_ROOT_PASSWORD: s95x4y7w
+    ports:
+      - "13306:3306"
 
   myproject-pma:
     container_name: myproject-pma
